@@ -13,7 +13,6 @@ def draw_boy(x,y):
     delay(0.01)
 
 def run_center():
-    print('center')
     y=90
     for x in range(800,0,-10):
         draw_boy(x,y)
@@ -21,25 +20,21 @@ def run_center():
     pass
 
 def run_top():
-    print('top')
     for x in range(800,0,-10):
         draw_boy(x,550)
     pass
 
 def run_right():
-    print('right')
     for y in range(90,600,10):
         draw_boy(775,y)
     pass
 
 def run_bottom():
-    print('bottom')
     for x in range(0,800,10):
         draw_boy(x,90)
     pass
 
 def run_left():
-    print('left')
     for y in range(600,90,-10):
         draw_boy(25,y)
     pass
@@ -51,15 +46,13 @@ def run_triangle():
     pass
 
 def run_rectangle():
-    print('Rectangle')
-    #run_top()
-    #run_right()
-    #run_bottom()
-    #run_left()
+    run_bottom()
+    run_right()
+    run_top()
+    run_left()
     pass
 
 def run_circle():
-    print('Circle')
     r,cx,cy = 300,800//2,600//2
     
     for d in range(0,360):
@@ -70,8 +63,8 @@ def run_circle():
     pass
 
 while True:
-    #run_circle()
-    #run_rectangle()
+    run_circle()
+    run_rectangle()
     run_triangle()
     break
 
