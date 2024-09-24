@@ -31,15 +31,16 @@ def run_bottom():
 
 def run_left():
     print('left')
-    #for y in range()
+    for y in range(600,90,-10):
+        draw_boy(25,y)
     pass
 
 def run_rectangle():
     print('Rectangle')
-    run_top()
+    #run_top()
     #run_right()
     #run_bottom()
-    #run_left()
+    run_left()
     pass
 
 def run_circle():
