@@ -9,6 +9,7 @@ boy=load_image('character.png')
 def draw_boy(x,y):
     clear_canvas_now()
     boy.draw_now(x,y)
+    grass.draw_now(400,30)
     delay(0.01)
 
 def run_top():
