@@ -14,6 +14,10 @@ def draw_boy(x,y):
 
 def run_center():
     print('center')
+    y=90
+    for x in range(800,0,-10):
+        draw_boy(x,y)
+        y += 5
     pass
 
 def run_top():
@@ -41,6 +45,8 @@ def run_left():
     pass
 
 def run_triangle():
+    run_bottom()
+
     run_center()
     pass
 
