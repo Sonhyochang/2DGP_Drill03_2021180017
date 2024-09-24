@@ -17,7 +17,7 @@ def run_center():
     y=90
     for x in range(800,0,-10):
         draw_boy(x,y)
-        y += 5
+        y += 6.5
     pass
 
 def run_top():
@@ -46,8 +46,8 @@ def run_left():
 
 def run_triangle():
     run_bottom()
-
     run_center()
+    run_left()
     pass
 
 def run_rectangle():
