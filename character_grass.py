@@ -12,6 +12,10 @@ def draw_boy(x,y):
     grass.draw_now(400,30)
     delay(0.01)
 
+def run_center():
+    print('center')
+    pass
+
 def run_top():
     print('top')
     for x in range(800,0,-10):
@@ -36,12 +40,16 @@ def run_left():
         draw_boy(25,y)
     pass
 
+def run_triangle():
+    run_center()
+    pass
+
 def run_rectangle():
     print('Rectangle')
     #run_top()
     #run_right()
     #run_bottom()
-    run_left()
+    #run_left()
     pass
 
 def run_circle():
@@ -57,7 +65,8 @@ def run_circle():
 
 while True:
     #run_circle()
-    run_rectangle()
+    #run_rectangle()
+    run_triangle()
     break
 
     
